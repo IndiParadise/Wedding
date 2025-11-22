@@ -1007,6 +1007,7 @@ audio#backgroundMusic {
 /* Container konten utama untuk Page 6 */
 #page6 .page6content {
   position: relative;
+  top: 10%;
   z-index: 10;
   width: 100%;
   text-align: center;
@@ -1015,8 +1016,8 @@ audio#backgroundMusic {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
-  min-height: 100%;
+  gap: 1rem;
+  min-height: 70%;
 }
 
 /* Gaya untuk judul di Page 6 */
@@ -1028,7 +1029,6 @@ audio#backgroundMusic {
   line-height: 1.1;
   text-shadow: 0 2px 4px rgba(45, 90, 60, 0.08);
   word-break: break-word;
-  padding: 10px 0;
   letter-spacing: 0.5px;
 }
 
@@ -1039,7 +1039,6 @@ audio#backgroundMusic {
   margin: 0;
   font-family: 'Lora', serif;
   color: #4a7b5f;
-  padding: 0 10px;
 }
 
 /* Gaya untuk kotak manfaat di Page 6 */
@@ -1075,7 +1074,7 @@ audio#backgroundMusic {
   box-shadow: 0 4px 15px rgba(0,0,0,0.05);
   font-weight: 500;
   color: #2d5a3c;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   line-height: 1.4;
   font-family: 'Lora', serif;
 }
@@ -1091,9 +1090,9 @@ audio#backgroundMusic {
 
 /* Gaya untuk credit di Page 6 */
 #page6 .credits {
+  background-color: #e8f5e9;
   position: relative;
-  bottom: 40px;
-  padding-top: 1.5rem;
+  bottom: 30px;
   border-top: 1px dashed rgba(45, 90, 60, 0.1);
   width: 100%;
   max-width: 300px;

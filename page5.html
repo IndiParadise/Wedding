@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Word Puzzle • Indi & Salman</title>
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="page5.css" />
+</head>
+<body>
+  <div class="mobile-container">
+    <section class="page active" id="page5">
+      <!-- Large background leaves -->
+      <img src="Assets/leafRightTopPage1.png" alt="" class="layer leaf-top-right">
+      <img src="Assets/leafLeftBottomPage1.png" alt="" class="layer leaf-bottom-left">
+
+      <div class="content">
+        <h1 class="title">PUZZLE<br>WORDS</h1>
+        <p class="subtitle">find our special words</p>
+
+        <div class="words-to-find" id="words-to-find">
+          <span class="word-item">INDI</span>
+          <span class="word-item">SALMAN</span>
+          <span class="word-item">KELUARGA</span>
+          <span class="word-item">PEJUANG</span>
+          <span class="word-item">PMT</span>
+        </div>
+
+        <div id="puzzle-grid"></div>
+
+        <div id="completion-message" class="hidden">
+          <h2 class="completion-title">Congratulation 🎉</h2>
+          <p class="completion-text">you found all of our special words</p>
+          <button id="claim-button">CLAIM CUPON</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="page5.js"></script>
+</body>
+</html>

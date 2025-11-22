@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bride & Groom • Indi & Salman</title>
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="page2.css" />
+</head>
+<body>
+  <div class="mobile-container">
+    <section class="page active" id="page2">
+      <!-- NEW: Background elements container -->
+      <div class="background-elements">
+        <!-- Example small flower placements -->
+        <img src="Assets/flowerPage3.png" alt="Small Flower" class="bg-flower" style="top: 10%; left: 10%;"> <!-- Batch 6, Image 26 -->
+        <img src="Assets/flowerPage3.png" alt="Small Flower" class="bg-flower" style="top: 80%; right: 15%;"> <!-- Batch 7, Image 32 -->
+        <!-- Example background leaf placements -->
+      </div>
+
+      <!-- Leaves -->
+      <img src="Assets/flowerTopPage2.png" alt="" class="layer flower-top">
+      <img src="Assets/flowerBottomPage2.png" alt="" class="layer flower-bottom">
+
+      <div class="content">
+
+        <!-- TABS - BUTTONS DI ATAS -->
+<div class="tabs">
+  <button class="tab-btn active" data-tab="bride-groom">Bride & Groom</button>
+  <button class="tab-btn" data-tab="akad">Wedding Vow</button>
+</div>
+
+<!-- TAB CONTENT - DI BAWAH BUTTON -->
+<div class="tab-content active" id="bride-groom">
+  <div class="info-box">
+    <h3>INDI PARADISE</h3>
+    <p class="parent-line">second daughter of Mr. Akhmad Kasun</p>
+    <p class="parent-line">& Mrs. Mariyam</p>
+
+    <span class="amp">&</span>
+
+    <h3>SALMAN ZAKARIA</h3>
+    <p class="parent-line">second son of Mr. Jubaedi Adnan</p>
+    <p class="parent-line">& Mrs. Laswati</p>
+  </div>
+</div>
+
+<div class="tab-content" id="akad">
+  <div class="info-box">
+    <p>Tuesday</p>
+    <h3>25.11.25</h3>
+    <p>09.00 AM </p>
+    <p>jl jangkang No.63 RT 13 RW 02, Leran, Manyar, Gresik</p>
+  </div>
+</div>
+
+        <!-- BUTTON GIFT - DI BAWAH SEMUA -->
+        <button class="open-announcement-btn" onclick="goToPage(3)" style="display: block !important; opacity: 1 !important; z-index: 999 !important;">GIFT</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="page2.js"></script>
+</body>
+</html>

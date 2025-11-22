@@ -10,14 +10,7 @@
 <body>
   <div class="mobile-container">
     <section class="page active" id="page1">
-      <!-- NEW: Background elements container -->
-      <div class="background-elements">
-        <!-- Example small flower placements with direct animation-delay -->
-        <img src="Assets/flowerPage3.png" alt="Small Flower" class="bg-flower" style="animation-delay: 0s;">
-        <img src="Assets/flowerPage3.png" alt="Small Flower" class="bg-flower" style="animation-delay: 1s;">
-        <img src="Assets/flowerPage3.png" alt="Small Flower" class="bg-flower" style="animation-delay: 2s;">
-        <img src="Assets/flowerPage3.png" alt="Small Flower" class="bg-flower" style="animation-delay: 3s;">
-      </div>
+      <!-- ... (other content like background elements, leaves, greeting) ... -->
 
       <!-- Content starts hidden behind large leaves -->
       <div class="content">
@@ -36,11 +29,40 @@
       <img src="Assets/leafLeftBottomPage1.png" alt="" class="layer leaf-left-bottom">
 
       <!-- Navigation Button -->
-      <button class="open-announcement-btn" onclick="goToPage(2)">OPEN</button>
+      <button class="open-announcement-btn" id="openBtn">OPEN</button> <!-- Add an ID for easy selection -->
     </section>
   </div>
 
+  <!-- NEW: Audio Element -->
+  <audio id="backgroundMusic" loop>
+    <source src="Assets/weddingSong.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
   <script>
+    // ... (existing script for goToPage and visitor name) ...
+
+    // NEW: Function to play music after user interaction
+    function playMusic() {
+      const audio = document.getElementById('backgroundMusic');
+      audio.play()
+        .then(() => {
+          console.log("Audio playback started successfully.");
+        })
+        .catch((error) => {
+          console.log("Audio playback failed:", error);
+          // Mungkin tampilkan pesan ke pengguna bahwa musik tidak bisa diputar
+        });
+    }
+
+    // NEW: Attach event listener to the OPEN button
+    document.getElementById('openBtn').addEventListener('click', function(event) {
+        // Attempt to play the music when the button is clicked
+        playMusic();
+        // Allow the default goToPage function to run (or the navigation logic)
+        // If goToPage uses window.location.href, it will navigate after this function runs.
+    });
+
     function goToPage(pageNumber) {
       // Buat overlay secara dinamis dengan warna background container
       const overlay = document.createElement('div');

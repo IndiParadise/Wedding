@@ -27,6 +27,12 @@ function goToPage(pageNumber) {
 
 window.addEventListener('DOMContentLoaded', () => {
   const urlParams = new URLSearchParams(window.location.search);
+  // GANTI 'Sahabat yang Dirahmati' DENGAN TEKS DEFAULT YANG ANDA INGINKAN JIKA DIPERLUKAN
   const name = decodeURIComponent(urlParams.get('name') || 'Sahabat yang Dirahmati');
-  document.getElementById('visitorName').textContent = name;
+  const visitorNameElement = document.getElementById('visitorName');
+  if (visitorNameElement) {
+    visitorNameElement.textContent = name; // <-- Baris ini yang mengganti teks
+  } else {
+     console.error("Element #visitorName not found!");
+  }
 });

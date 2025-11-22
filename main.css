@@ -1101,6 +1101,7 @@ audio#backgroundMusic {
   line-height: 1.4;
   font-family: 'Lora', serif;
   text-align: center;
+  margin-top: 10px;
 }
 
 /* HIDE SCROLLBARS - Umum untuk semua halaman */

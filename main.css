@@ -474,7 +474,7 @@ audio#backgroundMusic {
 /* Gaya untuk tombol navigasi di Page 2 */
 #page2 .open-announcement-btn {
   position: relative;
-  bottom:10%;
+  bottom:-5%;
   right:-37%;
   background: linear-gradient(135deg, #2d5a3c, #4a7b5f);
   color: #faf9f6;

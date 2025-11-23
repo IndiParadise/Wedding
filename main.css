@@ -1090,7 +1090,7 @@ audio#backgroundMusic {
 
 /* Gaya untuk credit di Page 6 */
 #page6 .credits {
-  background-color: #e8f5e9;
+  background: initial;
   border-top: 1px dashed rgba(45, 90, 60, 0.1);
   width: 100%;
   max-width: 300px;

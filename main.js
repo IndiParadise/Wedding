@@ -158,7 +158,7 @@ function createPageElement(pageId) {
           <div id="completion-message" class="hidden">
             <h2 class="completion-title">Congratulation 🎉</h2>
             <p class="completion-text">you found all of our special words</p>
-            <button id="claim-button">CLAIM CUPON</button>
+            <button id="claim-button">CLAIM COUPON</button>
           </div>
         </div>
       `;
